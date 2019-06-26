@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout>
+
+    <data>
+        <variable name="userBean" type="com.taonce.myjetpack.data.binding.UserBean"/>
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".data.binding.fragment.DataBindingFragment">
+
+        <TextView
+                android:id="@+id/tv_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                tools:text="@string/app_name"
+                android:text="@{userBean.firstName}"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
