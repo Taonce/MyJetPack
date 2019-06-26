@@ -3,7 +3,9 @@
 <layout>
 
     <data>
+        <!--方法所属类，方法的定义不一定非要在Activity中，可以在任何类中，只需要再次定义就好-->
         <variable name="activity" type="com.taonce.myjetpack.data.binding.function.FunctionActivity"/>
+        <!--通过variable把方法的参数传递过来-->
         <variable name="isToast" type="Boolean"/>
     </data>
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -16,16 +18,8 @@
 
         <Button android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/bt_reference"
-                app:layout_constraintTop_toTopOf="parent"
-                android:text="Method Reference"
-                android:textAllCaps="false"
-                android:onClick="@{activity::methodReference}"/>
-
-        <Button android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:id="@+id/bt_one"
-                app:layout_constraintTop_toBottomOf="@id/bt_reference"
+                app:layout_constraintTop_toTopOf="parent"
                 android:text="不带参数的方法"
                 android:textAllCaps="false"
                 android:onClick="@{() -> activity.buttonClick()}"/>

@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.databinding.DataBindingUtil
 import androidx.databinding.ObservableField
+import androidx.databinding.ObservableInt
 import com.taonce.myjetpack.R
 import com.taonce.myjetpack.databinding.ActivityObservableBinding
 import kotlin.random.Random

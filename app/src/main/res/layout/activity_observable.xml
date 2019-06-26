@@ -3,6 +3,7 @@
 <layout>
     <data>
         <import type="androidx.databinding.ObservableField"/>
+        <!--因为<需要转义成&lt;-->
         <variable name="title" type="ObservableField&lt;String>"/>
         <variable name="bean" type="com.taonce.myjetpack.data.binding.observable.ObservableBean"/>
         <variable name="activity" type="com.taonce.myjetpack.data.binding.observable.ObservableActivity"/>
